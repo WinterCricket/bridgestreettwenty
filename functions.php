@@ -10,4 +10,10 @@ function bridgestreet_files() {
 
 add_action('wp_enqueue_scripts','bridgestreet_files');
 
-?>
+
+function bridgestreet_features(){
+	add_theme_support('title-tag');
+}
+
+add_action('after_setup_theme', 'bridgestreet_features');
+
