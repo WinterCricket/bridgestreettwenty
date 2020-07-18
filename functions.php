@@ -18,15 +18,5 @@ function bridgestreet_features(){
 
 add_action('after_setup_theme', 'bridgestreet_features');
 
-function bridgestreet_post_types(){
-	register_post_type('event', array(
-		'public' => true, 
-		'labels' => array(
-			'name'=> 'Events'
-		),
-		'menu_icon' => 'dashicons-calendar' 
-	));
-}
 
-add_action('init', 'bridgestreet_post_types');
 
