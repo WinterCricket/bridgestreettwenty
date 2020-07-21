@@ -18,5 +18,11 @@ function bridgestreet_features(){
 
 add_action('after_setup_theme', 'bridgestreet_features');
 
+function bridge_adjust_queries($query){
+	$query->set('posts_per_page', '1');
+}
+
+add_action('pre_get_posts',' bridge_adjust_queries');
+
 
 
