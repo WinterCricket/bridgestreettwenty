@@ -8,7 +8,7 @@ get_header();
   <div class="page-banner__content container container--narrow">
     <h1 class="page-banner__title"> All Events</h1>
     <div class="page-banner__intro">
-      <p>Writing World Basics and Breakthroughs</p>
+      <p>Writing Basics and Breakthroughs</p>
     </div>
   </div>  
 </div>
@@ -22,7 +22,7 @@ get_header();
         <span class="event-summary__month"><?php 
             $eventDate = new DateTime(get_field('event_date'));
             echo $eventDate->format('M');
-             ?></spn>
+             ?></span>
         <span class="event-summary__day"><?php 
           echo $eventDate->format('d');
          ?></span>  
