@@ -37,6 +37,9 @@ get_header();
   } 
   echo paginate_links();
   ?>
+  <hr class="section-break">
+
+<p>Find a recap of past events here: <a href="<?php echo site_url('/past-events') ?>">Our past events archive</a> </p>
 
 </div>
 
